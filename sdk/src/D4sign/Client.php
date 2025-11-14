@@ -23,19 +23,20 @@ class Client extends ClientBase
     public $groups;
     public $tags;
     public $certificate;
-    
+    public $watcher;
+
     public function __construct()
     {
-        $this->documents 	= new Documents($this);
-        $this->safes 		= new Safes($this);
-        $this->templates 	= new Templates($this);
-        $this->folders	 	= new Folders($this);
-        $this->account	 	= new Account($this);
-        $this->users	 	= new Users($this);
-        $this->groups	 	= new Groups($this);
-        $this->tags	 	    = new Tags($this);
-        $this->certificate	= new Certificate($this);
-        $this->watcher	    = new Watcher($this);
+        $this->documents = new Documents($this);
+        $this->safes = new Safes($this);
+        $this->templates = new Templates($this);
+        $this->folders = new Folders($this);
+        $this->account = new Account($this);
+        $this->users = new Users($this);
+        $this->groups = new Groups($this);
+        $this->tags = new Tags($this);
+        $this->certificate = new Certificate($this);
+        $this->watcher = new Watcher($this);
     }
-    
+
 }
